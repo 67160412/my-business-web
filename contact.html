@@ -9,59 +9,69 @@
     <header>
       <h1>Contact</h1>
     </header>
-
-    <form action="/contact.html" method="POST">
-      <fieldset>
-        <legend>ข้อมูลส่วนตัว</legend>
-
-        <label for="fname">ชื่อจริง:</label>
-        <input type="text" id="fname" name="firstname" required />
-
-        <label for="lname">นามสกุล:</label>
-        <input type="text" id="lname" name="lastname" required />
-
-        <br />
-        <br />
-
-        <label for="email">อีเมล:</label>
-        <input type="email" id="email" name="email" required />
-
-        <br />
-        <br />
-
+    <section>
+      <form action="/contact.html" method="POST">
         <fieldset>
-          <legend>เพศ</legend>
-          <input type="radio" id="male" name="gender" value="male" />
-          <label for="male">ชาย</label>
+          <legend><h2>ข้อมูลส่วนตัว</h2></legend>
 
-          <input type="radio" id="female" name="gender" value="female" />
-          <label for="female">หญิง</label>
+          <label for="fname">ชื่อจริง:</label>
+          <input type="text" id="fname" name="firstname" required />
 
-          <input type="radio" id="other" name="gender" value="other" />
-          <label for="other">อื่นๆ</label>
+          <label for="lname">นามสกุล:</label>
+          <input type="text" id="lname" name="lastname" required />
+
+          <br />
+          <br />
+
+          <label for="email">อีเมล:</label>
+          <input type="email" id="email" name="email" required />
+
+          <br />
+          <br />
+
+          <fieldset>
+            <legend>เพศ</legend>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">ชาย</label>
+
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">หญิง</label>
+
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">อื่นๆ</label>
+          </fieldset>
+
+          <br />
+
+          <label for="country">ประเทศ:</label>
+          <select id="country" name="country">
+            <option value="">-- เลือกประเทศ --</option>
+            <option value="th">ไทย</option>
+            <option value="us">สหรัฐอเมริกา</option>
+            <option value="jp">ญี่ปุ่น</option>
+          </select>
+
+          <br />
+          <br />
+
+          <label for="message">ข้อความติดต่อ:</label>
+          <textarea id="message" name="message" rows="5" cols="40"></textarea>
+
+          <br />
+          <br />
+
+          <button type="submit">ส่งข้อความ</button>
         </fieldset>
+      </form>
+    </section>
 
-        <br />
-
-        <label for="country">ประเทศ:</label>
-        <select id="country" name="country">
-          <option value="">-- เลือกประเทศ --</option>
-          <option value="th">ไทย</option>
-          <option value="us">สหรัฐอเมริกา</option>
-          <option value="jp">ญี่ปุ่น</option>
-        </select>
-
-        <br />
-        <br />
-
-        <label for="message">ข้อความติดต่อ:</label>
-        <textarea id="message" name="message" rows="5" cols="40"></textarea>
-
-        <br />
-        <br />
-
-        <button type="submit">ส่งข้อความ</button>
-      </fieldset>
-    </form>
+    <section>
+      <h2>ที่อยู่บริษัท</h2>
+      <p>
+        ที่อยู่สำนักงานใหญ่ Netflix (สำนักงานใหญ่สหรัฐอเมริกา): 100 Winchester
+        Circle, Los Gatos, CA 95032, USA เบอร์โทรศัพท์: +1 408-540-3700
+        อีเมลฝ่ายบริการลูกค้า: support@netflix.com
+      </p>
+    </section>
   </body>
 </html>
