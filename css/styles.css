@@ -122,7 +122,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(255, 38, 38, 0.918), rgb(43, 10, 10)),
     url("https://assets.nflxext.com/ffe/siteui/vlv3/f841d4c7-10e1-40af-bcae-07a3f8dc141a/f6d7434e-d6de-4185-a6d4-c77a2d08737b/TH-en-20220502-popsignuptwoweeks-perspective_alpha_website_large.jpg"); /* ใส่รูปพื้นหลังและเงาดำ */
   background-size: cover;
   background-position: center;
@@ -282,4 +282,213 @@ a {
 .mv-box li {
   margin-bottom: 0.8rem;
   color: #cccccc;
+}
+/* ==========================================================================
+   6. SERVICES PAGE STYLES
+   ========================================================================== */
+
+/* --- Service Menu (Table of Contents) --- */
+.service-menu {
+  background-color: #1f1f1f;
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 5px solid #e50914;
+  margin-bottom: 2rem;
+}
+
+.service-menu h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.service-menu ol {
+  padding-left: 1.5rem;
+}
+
+.service-menu li {
+  margin-bottom: 0.5rem;
+}
+
+.service-menu a {
+  color: #b3b3b3;
+  transition: 0.3s;
+}
+
+.service-menu a:hover {
+  color: #e50914;
+  text-decoration: underline;
+}
+
+/* --- Service Items --- */
+.service-item {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #333; /* เส้นแบ่งจางๆ */
+}
+
+.service-item:last-child {
+  border-bottom: none;
+}
+
+.service-item h2 {
+  color: #e50914;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.service-item p {
+  color: #ccc;
+  line-height: 1.8;
+  max-width: 800px;
+}
+
+/* --- Pricing Table Styling --- */
+.table-responsive {
+  overflow-x: auto;
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  color: #fff;
+  min-width: 600px;
+}
+
+.pricing-table th,
+.pricing-table td {
+  border: 1px solid #333;
+  padding: 1rem;
+  text-align: center;
+}
+
+.pricing-table th {
+  background-color: #e50914;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.pricing-table tr:nth-child(even) {
+  background-color: #1f1f1f;
+}
+
+.pricing-table tr:nth-child(odd) {
+  background-color: #141414;
+}
+
+.pricing-table tr:hover {
+  background-color: #333;
+}
+
+.pricing-table td:first-child {
+  text-align: left;
+  font-weight: bold;
+  color: #e5e5e5;
+}
+
+/* ==========================================================================
+   7. CONTACT PAGE STYLES
+   ========================================================================== */
+
+/* --- Form Container --- */
+.form-container {
+  background-color: #000;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 700px;
+  margin: 0 auto;
+  border: 1px solid #333;
+}
+
+/* --- Form Groups --- */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-group-row .form-group {
+  flex: 1;
+}
+
+/* --- Inputs & Textarea & Select --- */
+.form-control {
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  border: 1px solid #333;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.form-control:focus {
+  background-color: #444;
+  border-color: #e50914;
+  outline: none;
+}
+
+/* Label Styles */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #b3b3b3;
+}
+
+/* --- Radio Buttons --- */
+.radio-group {
+  display: flex;
+  gap: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+}
+
+.radio-label input {
+  margin-right: 0.5rem;
+  accent-color: #e50914;
+  width: 18px;
+  height: 18px;
+}
+
+/* --- Location Section Grid --- */
+.location-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.location-info {
+  background-color: #1f1f1f;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.map-container iframe {
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .form-group-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .location-grid {
+    grid-template-columns: 1fr;
+  }
 }

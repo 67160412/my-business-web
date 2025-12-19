@@ -3,95 +3,199 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>Contact Us - Netflix</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!--4.1 Contact Form-->
-    <header>
-      <h1>Contact</h1>
+    <header id="header">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+            alt="Netflix Logo"
+            style="height: 30px; width: auto"
+          />
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <section>
-      <form action="/contact.html" method="POST">
-        <fieldset>
-          <legend><h2>ข้อมูลส่วนตัว</h2></legend>
 
-          <label for="fname">ชื่อจริง:</label>
-          <input type="text" id="fname" name="firstname" required />
+    <main>
+      <section class="section bg-dark" style="padding-bottom: 0">
+        <div class="container">
+          <h1 style="margin-bottom: 10px">ติดต่อเรา</h1>
+          <p style="text-align: center; color: #b3b3b3">
+            หากมีข้อสงสัยหรือต้องการความช่วยเหลือ กรอกข้อมูลด้านล่างได้เลย
+          </p>
+        </div>
+      </section>
 
-          <label for="lname">นามสกุล:</label>
-          <input type="text" id="lname" name="lastname" required />
+      <section class="section bg-dark">
+        <div class="container">
+          <div class="form-container">
+            <form action="#" method="POST">
+              <h2
+                style="
+                  margin-bottom: 1.5rem;
+                  border-left: 5px solid #e50914;
+                  padding-left: 15px;
+                "
+              >
+                ข้อมูลส่วนตัว
+              </h2>
 
-          <br />
-          <br />
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="fname">ชื่อจริง</label>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="firstname"
+                    class="form-control"
+                    placeholder="ระบุชื่อจริง"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="lname">นามสกุล</label>
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lastname"
+                    class="form-control"
+                    placeholder="ระบุนามสกุล"
+                    required
+                  />
+                </div>
+              </div>
 
-          <label for="email">อีเมล:</label>
-          <input type="email" id="email" name="email" required />
+              <div class="form-group">
+                <label for="email">อีเมล</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="example@email.com"
+                  required
+                />
+              </div>
 
-          <br />
-          <br />
+              <div class="form-group">
+                <label>เพศ</label>
+                <div class="radio-group">
+                  <label class="radio-label">
+                    <input type="radio" name="gender" value="male" />
+                    ชาย
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="gender" value="female" />
+                    หญิง
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="gender" value="other" />
+                    อื่นๆ
+                  </label>
+                </div>
+              </div>
 
-          <fieldset>
-            <legend>เพศ</legend>
-            <input type="radio" id="male" name="gender" value="male" />
-            <label for="male">ชาย</label>
+              <div class="form-group">
+                <label for="country">ประเทศ</label>
+                <select id="country" name="country" class="form-control">
+                  <option value="">-- เลือกประเทศ --</option>
+                  <option value="th">ไทย</option>
+                  <option value="us">สหรัฐอเมริกา</option>
+                  <option value="jp">ญี่ปุ่น</option>
+                </select>
+              </div>
 
-            <input type="radio" id="female" name="gender" value="female" />
-            <label for="female">หญิง</label>
+              <div class="form-group">
+                <label for="message">ข้อความติดต่อ</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  class="form-control"
+                  placeholder="พิมพ์ข้อความของคุณที่นี่..."
+                ></textarea>
+              </div>
 
-            <input type="radio" id="other" name="gender" value="other" />
-            <label for="other">อื่นๆ</label>
-          </fieldset>
+              <button
+                type="submit"
+                class="hero-btn"
+                style="width: 100%; border-radius: 4px; font-size: 1.1rem"
+              >
+                ส่งข้อความ
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
 
-          <br />
+      <section class="section bg-dark">
+        <div class="container">
+          <div class="location-grid">
+            <div class="location-info">
+              <h2 style="color: #e50914">ที่อยู่บริษัท</h2>
+              <p>
+                <strong>สำนักงานใหญ่ (USA):</strong>
+                <br />
+                100 Winchester Circle, Los Gatos, CA 95032, USA
+              </p>
 
-          <label for="country">ประเทศ:</label>
-          <select id="country" name="country">
-            <option value="">-- เลือกประเทศ --</option>
-            <option value="th">ไทย</option>
-            <option value="us">สหรัฐอเมริกา</option>
-            <option value="jp">ญี่ปุ่น</option>
-          </select>
+              <p style="margin-top: 1rem">
+                <strong>เบอร์โทรศัพท์:</strong>
+                <br />
+                <a href="tel:+14085403700" style="color: #fff">
+                  +1 408-540-3700
+                </a>
+              </p>
 
-          <br />
-          <br />
+              <p style="margin-top: 1rem">
+                <strong>อีเมลฝ่ายบริการลูกค้า:</strong>
+                <br />
+                <a href="mailto:support@netflix.com" style="color: #fff">
+                  support@netflix.com
+                </a>
+              </p>
+            </div>
 
-          <label for="message">ข้อความติดต่อ:</label>
-          <textarea id="message" name="message" rows="5" cols="40"></textarea>
+            <div class="map-container">
+              <iframe
+                src="https://maps.google.com/maps?q=100+Winchester+Circle,+Los+Gatos,+CA+95032,+USA&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-          <br />
-          <br />
-
-          <button type="submit">ส่งข้อความ</button>
-        </fieldset>
-      </form>
-    </section>
-
-    <!--4.2 Location-->
-    <section>
-      <h2>ที่อยู่บริษัท</h2>
-      <p>
-        ที่อยู่สำนักงานใหญ่ Netflix (สำนักงานใหญ่สหรัฐอเมริกา): 100 Winchester
-        Circle, Los Gatos, CA 95032, USA เบอร์โทรศัพท์: +1 408-540-3700
-        อีเมลฝ่ายบริการลูกค้า: support@netflix.com
-      </p>
-    </section>
-
-    <section>
-      <h2>ที่ตั้งสำนักงานใหญ่</h2>
-      <p>100 Winchester Circle, Los Gatos, CA 95032, USA</p>
-
-      <!--4.3 google maps-->
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.618721483448!2d-121.97708908468226!3d37.31803027983564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcb2c2d1fbc5d%3A0x3f6453a16c8bdb0e!2sNetflix!5e0!3m2!1sth!2sth!4v1698682888888!5m2!1sth!2sth"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </section>
-    <br />
-    <a href="index.html">Back to Home</a>
+    <footer id="footer">
+      <div class="container">
+        <p>
+          คำถาม? โทร
+          <a href="tel:000-000-0000">000-000-0000</a>
+        </p>
+        <ul class="footer-links">
+          <li><a href="#">คำถามที่พบบ่อย</a></li>
+          <li><a href="#">ศูนย์ช่วยเหลือ</a></li>
+          <li><a href="#">ข้อกำหนดการใช้งาน</a></li>
+          <li><a href="#">ความเป็นส่วนตัว</a></li>
+        </ul>
+        <p style="margin-top: 20px">Netflix Thailand</p>
+      </div>
+    </footer>
   </body>
 </html>
