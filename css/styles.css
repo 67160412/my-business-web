@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: normal;
+  background-color: rgb(255, 255, 255);
+}
+h1 {
+}
+h2 {
+}
+h3 {
+}
+p {
+  line-height: 1.5;
+}
+a {
+  color: blue;
+}
+.hero {
+}
+.card {
+}
+.btn {
+}
+.section {
+}
+#header {
+}
+#footer {
+}
+menu:hover {
+}
+items:hover {
+}
+cards:hover {
+}
+buttons:active {
+}
+list-styling:nth-child {
+}
