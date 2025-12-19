@@ -1,26 +1,25 @@
 Netflix (Mock Website)
-โปรเจคนี้เป็นการจำลอง การสร้างwebsite netflix services เพื่อฝึกการเขียน HTML พื้นฐาน
--หน้า Home / Services / Packages / Contact
-โครงสร้างไฟล์
-my-business-web
-├── index.html
-├── about.html
-├── services.html
-├── contact.html
-├── images/
-│ ├── Netflix_logo.png
-│ ├── Marc Randolph.jpg
-│ └── Reed Hastings.jpg
-└── README.md
 
-![images/index_page](images/index_page.png)
-http://127.0.0.1:5500/index.html
+โปรเจคนี้เป็นการจำลองการสร้างหน้าเว็บไซต์ Netflix Services เพื่อฝึกฝนทักษะการเขียน HTML5 และ CSS พื้นฐาน โดยเน้นเรื่องโครงสร้าง (Semantic HTML), การจัดวาง Layout (Flexbox/Grid), และการทำ Responsive Design เบื้องต้น
 
-![images/about_page.png](images/about_page.png)
-http://127.0.0.1:5500/about.html
+โครงสร้างไฟล์ (File Structure)
 
-![alt text](images/Services_page.png)
-http://127.0.0.1:5500/services.html
+```text
+my-business-web/
+├── css/
+│   └── styles.css          # ไฟล์ Style หลักของโปรเจค
+├── images/                 # โฟลเดอร์เก็บรูปภาพประกอบ
+│   ├── Netflix_logo.png
+│   ├── Marc Randolph.jpg
+│   ├── Reed Hastings.jpg
+│   ├── index_page.png
+│   ├── about_page.png
+│   ├── Services_page.png
+│   └── contact_page.png
+├── index.html              # หน้าหลัก (Home)
+├── about.html              # หน้าเกี่ยวกับเรา (About Us)
+├── services.html           # หน้าบริการและแพ็กเกจ (Services & Pricing)
+├── contact.html            # หน้าติดต่อเรา (Contact Form)
+└── README.md               # เอกสารอธิบายโปรเจค
 
-![alt text](images/contact_page.png)
-http://127.0.0.1:5500/contact.html
+```
