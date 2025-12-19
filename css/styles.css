@@ -200,3 +200,79 @@ a {
 #footer a:hover {
   text-decoration: underline;
 }
+
+/* ==========================================================================
+   5. ABOUT PAGE STYLES (Add to existing styles.css)
+   ========================================================================== */
+
+/* Active Link State */
+.nav-links a.active {
+  color: #fff;
+  font-weight: bold;
+  border-bottom: 2px solid #e50914;
+}
+
+/* --- Team Section --- */
+.team-grid {
+  display: flex;
+  justify-content: center; /* จัดกึ่งกลาง */
+  gap: 3rem; /* ระยะห่างระหว่างรูป */
+  flex-wrap: wrap; /* ย่อจอแล้วรูปตกลงมา */
+  margin-top: 2rem;
+}
+
+.team-member {
+  text-align: center;
+  max-width: 300px;
+}
+
+.team-member img {
+  width: 100%; /* ให้รูปยืดเต็มกล่อง */
+  height: auto;
+  border-radius: 8px; /* มุมมน */
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2); /* เงาสีแดงจางๆ */
+  margin-bottom: 1rem;
+  transition: transform 0.3s;
+}
+
+.team-member img:hover {
+  transform: scale(1.05); /* เอฟเฟกต์ซูมตอนชี้ */
+}
+
+.team-member figcaption {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+/* --- Mission & Vision --- */
+.mv-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.mv-box {
+  background: #1f1f1f; /* สีเทาเข้มตัดกับพื้นหลังดำ */
+  padding: 2rem;
+  border-radius: 8px;
+  flex: 1 1 300px; /* แบ่งครึ่งหน้าจอ */
+  border-top: 4px solid #e50914; /* ขีดแดงด้านบน */
+}
+
+.mv-box h3 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.mv-box ol {
+  padding-left: 1.5rem;
+}
+
+.mv-box li {
+  margin-bottom: 0.8rem;
+  color: #cccccc;
+}
