@@ -3,61 +3,142 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>About Us - Netflix</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header><h1>About</h1></header>
+    <header id="header">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+            alt="Netflix Logo"
+            style="height: 30px; width: auto"
+          />
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Sign In</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <!--2.1 History-->
-    <h2>เรื่องราวบริษัท</h2>
-    <p>
-      Netflix เริ่มต้นในปี 1997 ที่สหรัฐฯ ในฐานะบริการ
-      เช่าวิดีโอและดีวีดีทางไปรษณีย์ ต่อมาในปี 2007 ได้เปลี่ยนรูปแบบสำคัญเป็น
-      สตรีมมิ่งออนไลน์ ให้ผู้ใช้ดูหนังและซีรีส์ผ่านอินเทอร์เน็ตได้ทัน ช่วงปี
-      2013 เป็นต้นมา Netflix เริ่มสร้าง ผลงานออริจินัล ของตัวเอง เช่น House of
-      Cards ทำให้ได้รับความนิยมทั่วโลก และขยายบริการไปยังหลายประเทศ
-      จนกลายเป็นหนึ่งในแพลตฟอร์มสตรีมมิ่งที่ใหญ่ที่สุดในโลกในปัจจุบัน.
-    </p>
+    <main>
+      <section class="section" style="padding-bottom: 0">
+        <div class="container">
+          <h1>About Netflix</h1>
+        </div>
+      </section>
 
-    <!--2.2 Team-->
-    <h2>Team</h2>
-    <figure>
-      <img
-        src="/images/Reed Hastings.jpg"
-        width="250"
-        height="300"
-        alt="Reed Hastings"
-      />
-      <figcaption>Reed Hastings – นักธุรกิจและวิศวกรซอฟต์แวร์</figcaption>
-    </figure>
-    <figure>
-      <img
-        src="images/Marc Randolph.jpg"
-        width="300"
-        height="300"
-        alt="Marc Randolph"
-      />
-      <figcaption>Marc Randolph – ผู้ประกอบการและนักการตลาด</figcaption>
-    </figure>
+      <section class="section">
+        <div class="container">
+          <h2>เรื่องราวบริษัท</h2>
+          <p
+            style="
+              max-width: 800px;
+              margin: 0 auto;
+              font-size: 1.1rem;
+              line-height: 1.8;
+            "
+          >
+            Netflix เริ่มต้นในปี 1997 ที่สหรัฐฯ
+            ในฐานะบริการเช่าวิดีโอและดีวีดีทางไปรษณีย์ ต่อมาในปี 2007
+            ได้เปลี่ยนรูปแบบสำคัญเป็นสตรีมมิ่งออนไลน์
+            ให้ผู้ใช้ดูหนังและซีรีส์ผ่านอินเทอร์เน็ตได้ทันที ช่วงปี 2013
+            เป็นต้นมา Netflix เริ่มสร้างผลงานออริจินัลของตัวเอง เช่น House of
+            Cards ทำให้ได้รับความนิยมทั่วโลก และขยายบริการไปยังหลายประเทศ
+            จนกลายเป็นหนึ่งในแพลตฟอร์มสตรีมมิ่งที่ใหญ่ที่สุดในโลกในปัจจุบัน
+          </p>
+        </div>
+      </section>
 
-    <!--2.3 Mission/Vision-->
-    <h2>Mission and Vision</h2>
-    <ul>
-      <li><h3>Mission</h3></li>
-      <ol>
-        <li>ให้ความบันเทิงแก่ผู้ชมทั่วโลก</li>
-        <li>นำเสนอคอนเทนต์คุณภาพสูงที่ผู้คนเข้าถึงได้ทุกที่</li>
-        <li>ใช้เทคโนโลยีเพื่อมอบประสบการณ์รับชมที่ดีที่สุด</li>
-      </ol>
-      <li><h3>Vision</h3></li>
-      <ol>
-        <li>เป็นแพลตฟอร์มความบันเทิงออนไลน์ระดับโลกที่ดีที่สุด</li>
-        <li>ขยายคอนเทนต์ให้ครอบคลุมผู้ชมทุกวัฒนธรรมทั่วโลก</li>
-        <li>พัฒนานวัตกรรมใหม่เพื่อยกระดับอุตสาหกรรมสตรีมมิง</li>
-      </ol>
-    </ul>
+      <section class="section" style="background-color: #000">
+        <div class="container">
+          <h2 style="text-align: center">Executive Team</h2>
 
-    <!--2.4 Link back to home-->
-    <a href="index.html">Back to home</a>
+          <div class="team-grid">
+            <figure class="team-member">
+              <img
+                src="images/Reed Hastings.jpg"
+                alt="Reed Hastings"
+                onerror="this.src='https://placehold.co/300x350?text=Reed+Hastings'"
+              />
+              <figcaption>
+                <strong>Reed Hastings</strong>
+                <br />
+                <span style="font-size: 0.9rem; color: #b3b3b3">
+                  Co-Founder & Chairman
+                </span>
+              </figcaption>
+            </figure>
+
+            <figure class="team-member">
+              <img
+                src="images/Marc Randolph.jpg"
+                alt="Marc Randolph"
+                onerror="this.src='https://placehold.co/300x350?text=Marc+Randolph'"
+              />
+              <figcaption>
+                <strong>Marc Randolph</strong>
+                <br />
+                <span style="font-size: 0.9rem; color: #b3b3b3">
+                  Co-Founder & First CEO
+                </span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="mv-container">
+            <div class="mv-box">
+              <h3>Mission</h3>
+              <ol>
+                <li>ให้ความบันเทิงแก่ผู้ชมทั่วโลก</li>
+                <li>นำเสนอคอนเทนต์คุณภาพสูงที่ผู้คนเข้าถึงได้ทุกที่</li>
+                <li>ใช้เทคโนโลยีเพื่อมอบประสบการณ์รับชมที่ดีที่สุด</li>
+              </ol>
+            </div>
+
+            <div class="mv-box">
+              <h3>Vision</h3>
+              <ol>
+                <li>เป็นแพลตฟอร์มความบันเทิงออนไลน์ระดับโลกที่ดีที่สุด</li>
+                <li>ขยายคอนเทนต์ให้ครอบคลุมผู้ชมทุกวัฒนธรรมทั่วโลก</li>
+                <li>พัฒนานวัตกรรมใหม่เพื่อยกระดับอุตสาหกรรมสตรีมมิง</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container" style="text-align: center; margin-bottom: 2rem">
+        <a href="index.html" class="hero-btn" style="font-size: 1rem">
+          &larr; Back to Home
+        </a>
+      </div>
+    </main>
+
+    <footer id="footer">
+      <div class="container">
+        <p style="margin-bottom: 20px">
+          คำถาม? โทร
+          <a href="tel:000-000-0000">000-000-0000</a>
+        </p>
+        <ul class="footer-links">
+          <li><a href="#">คำถามที่พบบ่อย</a></li>
+          <li><a href="#">ศูนย์ช่วยเหลือ</a></li>
+          <li><a href="#">นักลงทุนสัมพันธ์</a></li>
+          <li><a href="#">งานกับเรา</a></li>
+        </ul>
+        <p style="margin-top: 30px; font-size: 0.9rem">Netflix Thailand</p>
+      </div>
+    </footer>
   </body>
 </html>
