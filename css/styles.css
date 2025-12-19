@@ -2,7 +2,7 @@
    1. RESET & DEFAULTS
    ========================================================================== */
 html {
-  font-size: 16px; /* แก้ไข: ลบคำว่า size ออก */
+  font-size: 16px;
   scroll-behavior: smooth;
 }
 
@@ -17,7 +17,7 @@ body {
   font-size: 1rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
-  background-color: #141414; /* ปรับพื้นหลังเป็นสีดำสไตล์ Netflix */
+  background-color: #141414;
 }
 
 /* ==========================================================================
@@ -30,7 +30,7 @@ h3 {
 }
 
 h1 {
-  font-size: 2.5rem; /* ใช้ rem */
+  font-size: 2.5rem;
   font-weight: 700;
   color: #ffffff;
   text-align: center;
@@ -39,7 +39,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  color: #e50914; /* สีแดง Netflix */
+  color: #e50914;
   margin-top: 30px;
   margin-bottom: 15px;
   border-bottom: 2px solid #e50914;
@@ -68,7 +68,7 @@ a {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px; /* ลด padding บนล่าง ให้ section จัดการแทน */
+  padding: 0 20px;
 }
 
 /* ==========================================================================
@@ -80,7 +80,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: #000000; /* สีดำทึบ */
+  background: #000000;
   padding: 1rem 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
@@ -91,7 +91,6 @@ a {
   align-items: center;
 }
 
-/* ปรับ Logo: ให้รูปและตัวหนังสืออยู่คู่กันสวยๆ */
 .logo {
   display: flex;
   align-items: center;
@@ -102,11 +101,10 @@ a {
   text-transform: uppercase;
 }
 
-/* จัดเมนูให้อยู่แนวนอน (สำคัญ!) */
 .nav-links {
   display: flex;
-  list-style: none; /* เอาจุด bullet ออก */
-  gap: 2rem; /* ระยะห่างระหว่างเมนู */
+  list-style: none;
+  gap: 2rem;
 }
 
 .nav-links a {
@@ -131,7 +129,7 @@ a {
   color: white;
   padding: 4rem 2rem;
   text-align: center;
-  min-height: 500px; /* เพิ่มความสูงอีกนิด */
+  min-height: 500px;
 }
 
 .hero p {
@@ -141,15 +139,23 @@ a {
 }
 
 /* --- Cards Layout (Grid System) --- */
-/* ส่วนนี้ขาดไปในโค้ดเดิม ทำให้การ์ดไม่เรียง */
 .section {
   padding: 4rem 0;
-  background-color: #fff; /* ส่วนเนื้อหาพื้นขาว */
+  background-color: #fff;
 }
 
+.bg-white {
+  background-color: #fff;
+  color: #333;
+}
+
+.bg-dark {
+  background-color: #141414;
+  color: #fff;
+}
 .card-container {
   display: flex;
-  flex-wrap: wrap; /* ย่อหน้าจอแล้วการ์ดตกลงมา */
+  flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
 }
@@ -159,7 +165,7 @@ a {
   padding: 2rem;
   border: 1px solid #ddd;
   border-radius: 8px;
-  flex: 1 1 300px; /* กว้างอย่างน้อย 300px */
+  flex: 1 1 300px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
   color: #333;
@@ -215,9 +221,9 @@ a {
 /* --- Team Section --- */
 .team-grid {
   display: flex;
-  justify-content: center; /* จัดกึ่งกลาง */
-  gap: 3rem; /* ระยะห่างระหว่างรูป */
-  flex-wrap: wrap; /* ย่อจอแล้วรูปตกลงมา */
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
   margin-top: 2rem;
 }
 
@@ -227,16 +233,16 @@ a {
 }
 
 .team-member img {
-  width: 100%; /* ให้รูปยืดเต็มกล่อง */
+  width: 100%;
   height: auto;
-  border-radius: 8px; /* มุมมน */
-  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2); /* เงาสีแดงจางๆ */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2);
   margin-bottom: 1rem;
   transition: transform 0.3s;
 }
 
 .team-member img:hover {
-  transform: scale(1.05); /* เอฟเฟกต์ซูมตอนชี้ */
+  transform: scale(1.05);
 }
 
 .team-member figcaption {
@@ -253,11 +259,11 @@ a {
 }
 
 .mv-box {
-  background: #1f1f1f; /* สีเทาเข้มตัดกับพื้นหลังดำ */
+  background: #1f1f1f;
   padding: 2rem;
   border-radius: 8px;
-  flex: 1 1 300px; /* แบ่งครึ่งหน้าจอ */
-  border-top: 4px solid #e50914; /* ขีดแดงด้านบน */
+  flex: 1 1 300px;
+  border-top: 4px solid #e50914;
 }
 
 .mv-box h3 {
