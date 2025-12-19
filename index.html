@@ -3,92 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Netflix</title>
-    <style>
-      header {
-        background-color: black;
-        color: white;
-        font-family: verdana;
-      }
-      a {
-        text-decoration: none;
-        color: rgb(252, 0, 0);
-      }
-      main {
-        background-color: rgba(252, 5, 5, 0.459);
-      }
-    </style>
+    <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!--1.1 Header ที่มี logo-->
-    <header>
-      <h1>
-        <img
-          src="images/Netflix_logo.png"
-          alt="Netflix-Logo"
-          width="80"
-          height="100"
-        />
-        Netflix
-      </h1>
-      <!--1.2 Navigation menu-->
-      <nav>
-        <br />
-        <a href="index.html">&nbsp;&nbsp;Home</a>
-        <a href="about.html">&nbsp;&nbsp;About</a>
-        <a href="services.html">&nbsp;&nbsp;Services</a>
-        <a href="contact.html">&nbsp;&nbsp;Contact</a>
-      </nav>
-      <br />
+    <header id="header">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+            alt="Netflix Logo"
+            style="height: 30px; width: auto"
+          />
+        </a>
+
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Sign In</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <!--1.3 Her section-->
+
     <main>
-      <section>
-        <h2>Welcome</h2>
-        <p>
-          ความบันเทิงครบทุกแนวในที่เดียว เลือกชมภาพยนตร์ ซีรีส์ รายการ
-          และอนิเมะได้ตามใจ เพียงสมัครครั้งเดียว ดูได้ทุกอุปกรณ์
-        </p>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Unlimited movies, TV shows, and more</h1>
+          <p>
+            ความบันเทิงครบทุกแนวในที่เดียว เลือกชมภาพยนตร์ ซีรีส์
+            เพียงสมัครครั้งเดียว ดูได้ทุกอุปกรณ์
+          </p>
+          <button class="hero-btn">Get Started &rarr;</button>
+        </div>
       </section>
-      <!--Featured services-->
-      <section>
-        <h2>Featured services</h2>
-        <ul>
-          <article>
-            <li><h3>สตรีมภาพยนตร์และซีรีส์</h3></li>
-            <p>ดูหนังและซีรีส์ได้ไม่จำกัด ทุกประเภท ทุกเวลา</p>
-          </article>
-          <article>
-            <li><h3>คอนเทนต์ออริจินัล (Netflix Originals)</h3></li>
-            <p>ผลงานสร้างเอง เช่น ซีรีส์ หนัง และสารคดีเฉพาะบน Netflix</p>
-          </article>
-          <article>
-            <li><h3>รับชมได้หลายอุปกรณ์</h3></li>
-            <p>ดูได้ทั้งทีวี มือถือ แท็บเล็ต และคอมพิวเตอร์อย่างต่อเนื่อง</p>
-          </article>
-        </ul>
+
+      <section class="section">
+        <div class="container">
+          <h2 style="text-align: center; margin-bottom: 2rem">
+            Featured Services
+          </h2>
+
+          <div class="card-container">
+            <article class="card">
+              <h3>สตรีมภาพยนตร์และซีรีส์</h3>
+              <p>ดูหนังและซีรีส์ได้ไม่จำกัด ทุกประเภท ทุกเวลา</p>
+            </article>
+
+            <article class="card">
+              <h3>คอนเทนต์ออริจินัล</h3>
+              <p>ผลงานสร้างเอง เช่น ซีรีส์ หนัง และสารคดีเฉพาะบน Netflix</p>
+            </article>
+
+            <article class="card">
+              <h3>รับชมได้หลายอุปกรณ์</h3>
+              <p>ดูได้ทั้งทีวี มือถือ แท็บเล็ต และคอมพิวเตอร์อย่างต่อเนื่อง</p>
+            </article>
+          </div>
+        </div>
       </section>
     </main>
+
+    <footer id="footer">
+      <div class="container">
+        <p style="margin-bottom: 20px">
+          คำถาม? โทร
+          <a href="tel:000-000-0000">000-000-0000</a>
+        </p>
+
+        <ul
+          class="footer-links"
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            list-style: none;
+            gap: 1rem;
+            text-align: left;
+          "
+        >
+          <li><a href="#">คำถามที่พบบ่อย</a></li>
+          <li><a href="#">ศูนย์ช่วยเหลือ</a></li>
+          <li><a href="#">บัญชีผู้ใช้</a></li>
+          <li><a href="#">สื่อสัมพันธ์</a></li>
+          <li><a href="#">งานกับเรา</a></li>
+          <li><a href="#">ความเป็นส่วนตัว</a></li>
+          <li><a href="#">การตั้งค่าคุกกี้</a></li>
+          <li><a href="#">กฎหมาย</a></li>
+        </ul>
+
+        <p style="margin-top: 30px; font-size: 0.9rem">Netflix Thailand</p>
+      </div>
+    </footer>
   </body>
-
-  <!--Footer-->
-  <footer>
-    <p>
-      คำถาม? โทร
-      <a href="#">000-000-0000</a>
-    </p>
-
-    <ul>
-      <li><a href="#">คำถามที่พบบ่อย</a></li>
-      <li><a href="#">ศูนย์ช่วยเหลือ</a></li>
-      <li><a href="#">บัญชีผู้ใช้</a></li>
-      <li><a href="#">สื่อสัมพันธ์</a></li>
-      <li><a href="#">งานกับเรา</a></li>
-      <li><a href="#">ความเป็นส่วนตัว</a></li>
-      <li><a href="#">การตั้งค่าคุกกี้</a></li>
-      <li><a href="#">กฎหมาย</a></li>
-    </ul>
-
-    <p>Netflix Thailand</p>
-  </footer>
 </html>
